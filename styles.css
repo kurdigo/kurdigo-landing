@@ -12,6 +12,29 @@
   padding: 0;
 }
 
+/* ====== OPENING ANIMATION ====== */
+
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(18px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.flag-icon { animation: fade-up  0.7s ease-out 0.25s both; }
+h1         { animation: fade-up  0.8s ease-out 0.40s both; }
+.tagline   { animation: fade-up  0.7s ease-out 0.55s both; }
+.stats     { animation: fade-up  0.6s ease-out 0.68s both; }
+.sub-stats { animation: fade-up  0.6s ease-out 0.76s both; }
+.games     { animation: fade-up  0.6s ease-out 0.84s both; }
+.dl-label  { animation: fade-up  0.5s ease-out 0.92s both; }
+.badges    { animation: fade-up  0.6s ease-out 1.00s both; }
+footer     { animation: fade-in  0.6s ease-out 1.10s both; }
+.sun-bg    { animation: fade-in  1.4s ease-out 0.60s both; }
+
 html, body {
   height: 100%;
 }

@@ -170,5 +170,18 @@
     <a href="mailto:kurdigo.ca@gmail.com">İletişim</a>
   </footer>
 
+  <script>
+    (function () {
+      var BG_URL = 'https://firebasestorage.googleapis.com/v0/b/kurdish-app-ea16a.firebasestorage.app/o/images%2Flessons%2Fls_unit3_l2_PLACEHOLDER%2Fres_black_adj_manual_1779847368066.png?alt=media&token=8c1128de-1425-4f72-ac64-ea697330b9dd';
+      var el = document.querySelector('.bg-photo');
+      el.style.opacity = '0';
+      var img = new Image();
+      img.onload = img.onerror = function () {
+        el.style.transition = 'opacity 2s ease 0.8s';
+        el.style.opacity = '0.28';
+      };
+      img.src = BG_URL;
+    })();
+  </script>
 </body>
 </html>
