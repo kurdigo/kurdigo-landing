@@ -4,5 +4,5 @@ Official single-page download site for KurdîGo.
 
 ## Links to update
 
-- App Store: replace the placeholder `id0000000000` in `index.html` when the live App Store URL is ready.
-- Google Play: currently points to `com.kurdigo.app`.
+- App Store: https://apps.apple.com/tr/app/kurd%C3%AEgo/id6763240648
+- Google Play: https://play.google.com/store/apps/details?id=com.kurdigo.app&hl=tr
