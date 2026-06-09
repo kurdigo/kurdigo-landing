@@ -1,87 +1,174 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="tr">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>KurdîGo - Kurmancî Öğren</title>
-    <meta
-      name="description"
-      content="KurdîGo: 6 seviye, 60 ünite, 300 ders ve 2400 kelimelik Kurmancî öğrenme uygulaması."
-    />
-    <meta property="og:title" content="KurdîGo - Kurmancî Öğren" />
-    <meta
-      property="og:description"
-      content="Dersler, oyunlar, telaffuz ve ilerleme takibiyle Kürtçe öğrenme uygulaması."
-    />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="assets/kurdigo-profile.png" />
-    <link rel="icon" href="assets/kurdigo-icon.png" />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <main class="site-shell">
-      <section class="hero" aria-labelledby="title">
-        <div class="hero-copy">
-          <img class="app-icon" src="assets/kurdigo-icon.png" alt="KurdîGo" />
-          <p class="kicker">KurdîGo</p>
-          <h1 id="title">Kurmancî öğrenmek için kapsamlı mobil rehber.</h1>
-          <p class="intro">
-            Başlangıçtan ileri seviyeye uzanan yapılandırılmış ders akışı; dinleme,
-            tekrar, quiz ve oyunlarla desteklenir.
-          </p>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KurdîGo</title>
+  <meta name="description" content="Kürtçe, sandığından kolay. KurdîGo ile Kurmancî öğren.">
+  <meta property="og:title" content="KurdîGo">
+  <meta property="og:description" content="Kürtçe, sandığından kolay.">
+  <meta property="og:image" content="assets/kurdigo-profile.png">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/kurdigo-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,900;1,400&family=Inter:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
-          <div class="metrics" aria-label="Uygulama kapsamı">
-            <div><strong>6</strong><span>seviye</span></div>
-            <div><strong>60</strong><span>ünite</span></div>
-            <div><strong>300</strong><span>ders</span></div>
-            <div><strong>2400</strong><span>kelime</span></div>
-          </div>
+  <!-- Cultural background photo -->
+  <div class="bg-photo" aria-hidden="true"></div>
 
-          <div class="store-row" aria-label="Uygulamayı indir">
-            <a
-              class="store-link"
-              href="https://apps.apple.com/tr/app/kurd%C3%AEgo/id6763240648"
-              aria-label="App Store'dan indir"
-            >
-              <span>App Store</span>
-              <small>iPhone ve iPad</small>
-            </a>
-            <a
-              class="store-link"
-              href="https://play.google.com/store/apps/details?id=com.kurdigo.app&hl=tr"
-              aria-label="Google Play'den indir"
-            >
-              <span>Google Play</span>
-              <small>Android cihazlar</small>
-            </a>
-          </div>
+  <!-- Kurdish sun watermark -->
+  <div class="sun-bg" aria-hidden="true">
+    <svg viewBox="-100 -100 200 200" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+      <polygon points="-4,-44 0,-90 4,-44" transform="rotate(0)"/>
+      <polygon points="-4,-44 0,-90 4,-44" transform="rotate(17.14)"/>
+      <polygon points="-4,-44 0,-90 4,-44" transform="rotate(34.29)"/>
+      <polygon points="-4,-44 0,-90 4,-44" transform="rotate(51.43)"/>
+      <polygon points="-4,-44 0,-90 4,-44" transform="rotate(68.57)"/>
+      <polygon points="-4,-44 0,-90 4,-44" transform="rotate(85.71)"/>
+      <polygon points="-4,-44 0,-90 4,-44" transform="rotate(102.86)"/>
+      <polygon points="-4,-44 0,-90 4,-44" transform="rotate(120)"/>
+      <polygon points="-4,-44 0,-90 4,-44" transform="rotate(137.14)"/>
+      <polygon points="-4,-44 0,-90 4,-44" transform="rotate(154.29)"/>
+      <polygon points="-4,-44 0,-90 4,-44" transform="rotate(171.43)"/>
+      <polygon points="-4,-44 0,-90 4,-44" transform="rotate(188.57)"/>
+      <polygon points="-4,-44 0,-90 4,-44" transform="rotate(205.71)"/>
+      <polygon points="-4,-44 0,-90 4,-44" transform="rotate(222.86)"/>
+      <polygon points="-4,-44 0,-90 4,-44" transform="rotate(240)"/>
+      <polygon points="-4,-44 0,-90 4,-44" transform="rotate(257.14)"/>
+      <polygon points="-4,-44 0,-90 4,-44" transform="rotate(274.29)"/>
+      <polygon points="-4,-44 0,-90 4,-44" transform="rotate(291.43)"/>
+      <polygon points="-4,-44 0,-90 4,-44" transform="rotate(308.57)"/>
+      <polygon points="-4,-44 0,-90 4,-44" transform="rotate(325.71)"/>
+      <polygon points="-4,-44 0,-90 4,-44" transform="rotate(342.86)"/>
+      <circle r="38"/>
+    </svg>
+  </div>
+
+  <main>
+    <div class="flag-icon" aria-label="Kürdistan bayrağı">
+      <div class="fi-red"></div>
+      <div class="fi-white">
+        <svg class="fi-sun" viewBox="-100 -100 200 200" xmlns="http://www.w3.org/2000/svg" fill="#F7C948">
+          <polygon points="-4,-44 0,-90 4,-44" transform="rotate(0)"/>
+          <polygon points="-4,-44 0,-90 4,-44" transform="rotate(17.14)"/>
+          <polygon points="-4,-44 0,-90 4,-44" transform="rotate(34.29)"/>
+          <polygon points="-4,-44 0,-90 4,-44" transform="rotate(51.43)"/>
+          <polygon points="-4,-44 0,-90 4,-44" transform="rotate(68.57)"/>
+          <polygon points="-4,-44 0,-90 4,-44" transform="rotate(85.71)"/>
+          <polygon points="-4,-44 0,-90 4,-44" transform="rotate(102.86)"/>
+          <polygon points="-4,-44 0,-90 4,-44" transform="rotate(120)"/>
+          <polygon points="-4,-44 0,-90 4,-44" transform="rotate(137.14)"/>
+          <polygon points="-4,-44 0,-90 4,-44" transform="rotate(154.29)"/>
+          <polygon points="-4,-44 0,-90 4,-44" transform="rotate(171.43)"/>
+          <polygon points="-4,-44 0,-90 4,-44" transform="rotate(188.57)"/>
+          <polygon points="-4,-44 0,-90 4,-44" transform="rotate(205.71)"/>
+          <polygon points="-4,-44 0,-90 4,-44" transform="rotate(222.86)"/>
+          <polygon points="-4,-44 0,-90 4,-44" transform="rotate(240)"/>
+          <polygon points="-4,-44 0,-90 4,-44" transform="rotate(257.14)"/>
+          <polygon points="-4,-44 0,-90 4,-44" transform="rotate(274.29)"/>
+          <polygon points="-4,-44 0,-90 4,-44" transform="rotate(291.43)"/>
+          <polygon points="-4,-44 0,-90 4,-44" transform="rotate(308.57)"/>
+          <polygon points="-4,-44 0,-90 4,-44" transform="rotate(325.71)"/>
+          <polygon points="-4,-44 0,-90 4,-44" transform="rotate(342.86)"/>
+          <circle r="38"/>
+        </svg>
+      </div>
+      <div class="fi-green"></div>
+    </div>
+    <h1>KurdîGo</h1>
+    <p class="tagline"><em>Kürtçe, sandığından kolay.</em></p>
+
+    <!-- Stats -->
+    <div class="stats">
+      <div class="stat">
+        <strong>6</strong>
+        <span>Seviye</span>
+      </div>
+      <div class="stat-rule" aria-hidden="true"></div>
+      <div class="stat">
+        <strong>60</strong>
+        <span>Ünite</span>
+      </div>
+      <div class="stat-rule" aria-hidden="true"></div>
+      <div class="stat">
+        <strong>300</strong>
+        <span>Ders</span>
+      </div>
+      <div class="stat-rule" aria-hidden="true"></div>
+      <div class="stat">
+        <strong>2,400</strong>
+        <span>Kelime</span>
+      </div>
+      <div class="stat-rule" aria-hidden="true"></div>
+      <div class="stat">
+        <strong>18,000</strong>
+        <span>Alıştırma</span>
+      </div>
+    </div>
+
+    <p class="sub-stats">
+      <span class="sub-ornament" aria-hidden="true">✦</span>
+      Online kelime oyunları
+      <span class="sub-ornament" aria-hidden="true">✦</span>
+    </p>
+
+    <div class="games">
+      <div class="game-card">
+        <span class="game-emoji">🧩</span>
+        <span class="game-name">Peyvmatik</span>
+      </div>
+      <div class="game-card">
+        <span class="game-emoji">⚡</span>
+        <span class="game-name">Bizav</span>
+      </div>
+    </div>
+
+    <!-- Download label -->
+    <div class="dl-label">
+      <span class="dl-rule"></span>
+      <span class="dl-text">İndirmek için</span>
+      <span class="dl-rule"></span>
+    </div>
+
+    <!-- Store badges -->
+    <div class="badges">
+
+      <!-- App Store official badge -->
+      <a href="https://apps.apple.com/tr/app/kurd%C3%AEgo/id6763240648" class="badge" aria-label="App Store'dan indir">
+        <svg class="badge-icon" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+        </svg>
+        <div class="badge-text">
+          <small>Download on the</small>
+          <strong>App Store</strong>
         </div>
+      </a>
 
-        <div class="visual" aria-hidden="true">
-          <div class="flag-disc">
-            <img src="assets/kurdigo-profile.png" alt="" />
-          </div>
-          <div class="lesson-strip">
-            <div>
-              <b>Dinle</b>
-              <span>Telaffuzu duy</span>
-            </div>
-            <div>
-              <b>Eşleştir</b>
-              <span>Hızlı pratik yap</span>
-            </div>
-            <div>
-              <b>İlerle</b>
-              <span>Günlük hedefini takip et</span>
-            </div>
-          </div>
+      <!-- Google Play official badge -->
+      <a href="https://play.google.com/store/apps/details?id=com.kurdigo.app&hl=tr" class="badge" aria-label="Google Play'den indir">
+        <svg class="badge-icon" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M1 26L13.5 13.5 1 1" fill="#32BBFF"/>
+          <path d="M1 1l16 9.5-3.5 3-12.5-12.5z" fill="#FBBC05"/>
+          <path d="M17 10.5l4.5 2.5-4.5 2.5-3.5-2.5 3.5-2.5z" fill="#EA4335"/>
+          <path d="M13.5 13.5 17 16.5 1 26l12.5-12.5z" fill="#34A853"/>
+        </svg>
+        <div class="badge-text">
+          <small>GET IT ON</small>
+          <strong>Google Play</strong>
         </div>
-      </section>
-    </main>
+      </a>
 
-    <footer class="footer">
-      <span>© KurdîGo</span>
-      <a href="mailto:kurdigo.ca@gmail.com">İletişim</a>
-    </footer>
-  </body>
+    </div>
+  </main>
+
+  <footer>
+    <span>© 2025 KurdîGo</span>
+    <a href="mailto:kurdigo.ca@gmail.com">İletişim</a>
+  </footer>
+
+</body>
 </html>
