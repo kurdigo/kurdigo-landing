@@ -24,9 +24,9 @@
   to   { opacity: 1; }
 }
 
-.flag-icon { animation: fade-up  0.7s ease-out 0.25s both; }
-.wordmark  { animation: fade-up  0.8s ease-out 0.40s both; }
-.tagline   { animation: fade-up  0.7s ease-out 0.55s both; }
+.wordmark  { animation: fade-up  0.8s ease-out 0.25s both; }
+.tagline   { animation: fade-up  0.7s ease-out 0.40s both; }
+.flag-icon { animation: fade-up  0.7s ease-out 0.55s both; }
 .stats     { animation: fade-up  0.6s ease-out 0.68s both; }
 .sub-stats { animation: fade-up  0.6s ease-out 0.76s both, glow-pulse 3s ease-in-out 1.36s infinite; }
 .games     { animation: fade-up  0.6s ease-out 0.84s both; }
@@ -103,7 +103,7 @@ main {
   height: 76px;
   border-radius: 18px;
   overflow: hidden;
-  margin-bottom: 1.25rem;
+  margin: 0 0 1.25rem;
   box-shadow:
     0 8px 30px rgba(0, 0, 0, 0.45),
     0 0 0 1px rgba(255, 255, 255, 0.1);
@@ -125,12 +125,11 @@ main {
 }
 
 .wordmark {
-  width: min(480px, 82vw);
+  width: min(560px, 88vw);
   height: auto;
   display: block;
-  margin-bottom: 0.6rem;
-  animation: fade-up 0.8s ease-out 0.40s both;
-  /* override the h1 animation that was there before */
+  margin-bottom: 0.25rem;
+  filter: drop-shadow(0 12px 28px rgba(0, 0, 0, 0.42));
 }
 
 
@@ -140,7 +139,7 @@ main {
   font-style: italic;
   color: var(--gold);
   opacity: 0.92;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1rem;
 }
 
 /* ====== STATS ====== */
