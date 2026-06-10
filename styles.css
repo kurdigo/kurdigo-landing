@@ -28,7 +28,7 @@
 .wordmark  { animation: fade-up  0.8s ease-out 0.40s both; }
 .tagline   { animation: fade-up  0.7s ease-out 0.55s both; }
 .stats     { animation: fade-up  0.6s ease-out 0.68s both; }
-.sub-stats { animation: fade-up  0.6s ease-out 0.76s both; }
+.sub-stats { animation: fade-up  0.6s ease-out 0.76s both, glow-pulse 3s ease-in-out 1.36s infinite; }
 .games     { animation: fade-up  0.6s ease-out 0.84s both; }
 .dl-label  { animation: fade-up  0.5s ease-out 0.92s both; }
 .badges    { animation: fade-up  0.6s ease-out 1.00s both; }
@@ -197,7 +197,6 @@ main {
     0 0 12px rgba(255, 200, 60, 0.7),
     0 0 32px rgba(255, 180, 20, 0.4),
     0 0 60px rgba(237, 177, 17, 0.2);
-  animation: glow-pulse 3s ease-in-out infinite;
 }
 
 @keyframes glow-pulse {
