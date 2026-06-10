@@ -25,7 +25,7 @@
 }
 
 .flag-icon { animation: fade-up  0.7s ease-out 0.25s both; }
-h1         { animation: fade-up  0.8s ease-out 0.40s both; }
+.wordmark  { animation: fade-up  0.8s ease-out 0.40s both; }
 .tagline   { animation: fade-up  0.7s ease-out 0.55s both; }
 .stats     { animation: fade-up  0.6s ease-out 0.68s both; }
 .sub-stats { animation: fade-up  0.6s ease-out 0.76s both; }
@@ -124,18 +124,15 @@ main {
   transform: translate(-50%, -50%);
 }
 
-h1 {
-  font-family: 'Playfair Display', serif;
-  font-weight: 900;
-  font-size: clamp(3rem, 8.5vw, 6.8rem);
-  letter-spacing: -0.03em;
-  line-height: 1;
+.wordmark {
+  width: min(480px, 82vw);
+  height: auto;
+  display: block;
   margin-bottom: 0.6rem;
-  color: var(--cream);
-  text-shadow:
-    0 2px 40px rgba(237, 177, 17, 0.25),
-    0 0px 80px rgba(237, 177, 17, 0.1);
+  animation: fade-up 0.8s ease-out 0.40s both;
+  /* override the h1 animation that was there before */
 }
+
 
 .tagline {
   font-family: 'Playfair Display', serif;
